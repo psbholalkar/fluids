@@ -230,7 +230,7 @@ def fuzzy_match(name: str, strings: set[str]) -> str:
         fuzzy_match_fun = lambda name, strings: difflib.get_close_matches(name, strings, n=1, cutoff=0)[0]
     return fuzzy_match_fun(name, strings)
 
-LAMINAR_TRANSITION_PIPE = 2040.
+LAMINAR_TRANSITION_PIPE = 2300.
 """Believed to be the most accurate result to date. Accurate to +/- 10.
 Avila, Kerstin, David Moxey, Alberto de Lozar, Marc Avila, Dwight Barkley, and
 Björn Hof. "The Onset of Turbulence in Pipe Flow." Science 333, no. 6039
